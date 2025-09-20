@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gallery heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    border-radius: 7px;
+}
+
+/* Container for images */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+/* Image styling */
+.container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+     border: 2px solid black;
+     box-shadow: 3px 4px 5px aqua;
+}
+
+/* Hover effect for images */
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
